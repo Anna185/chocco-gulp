@@ -1214,7 +1214,7 @@ button {
   height: 100vh; }
 
 .chocco__accordeon-item-btn--milk {
-  background: url(../../img/item/milk.png) no-repeat;
+  background: url(../img/item/milk.png) no-repeat;
   background-size: cover; }
   .chocco__accordeon-item-btn--milk::after {
     position: absolute;
@@ -1228,7 +1228,7 @@ button {
     left: 0rem; }
 
 .chocco__accordeon-item-btn--honey {
-  background: url(../../img/item/honey.png) no-repeat;
+  background: url(../img/item/honey.png) no-repeat;
   background-size: cover; }
   .chocco__accordeon-item-btn--honey::after {
     position: absolute;
@@ -1242,7 +1242,7 @@ button {
     left: 0rem; }
 
 .chocco__accordeon-item-btn--berries {
-  background: url(../../img/item/berries.png) no-repeat;
+  background: url(../img/item/berries.png) no-repeat;
   background-size: cover; }
   .chocco__accordeon-item-btn--berries::after {
     position: absolute;
