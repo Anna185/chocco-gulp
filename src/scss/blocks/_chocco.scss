@@ -1,0 +1,247 @@
+.chocco {
+  width: 100%;
+  background: url(../img/chocco-menu.png) no-repeat;
+  background-size:cover; 
+  position: relative;
+
+  &::after {
+    content:"";
+    position: absolute;
+    width: 6.5rem;
+    height: 7.125rem;
+    background-image:url(./../img/raspberry-team.png);
+    left: 2.5rem;
+    top: -3.75rem; 
+
+    @include phones {
+      background-image: none;
+    }
+  }
+
+}
+
+.chocco__accordeon-item {
+  display: flex;
+
+  @include tablets {
+      flex: 0;
+      width:initial ;
+  }
+
+  @include phones {
+    width: initial;
+    flex:0;
+    
+  }
+
+}
+
+.chocco__title {
+  position: absolute; 
+  top: 13.5%;
+  left: 7%;
+  
+}
+
+
+
+.chocco__accordeon-list {
+  display: flex;
+  max-height: 100%;
+  position: absolute;
+  margin-top: 0rem;
+  height: 100vh;
+  right: 0;
+  top: 0;
+
+  @include tablets {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  @include phones {
+  padding-left: 0;
+  }
+}
+
+.chocco__accordeon-item-title {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  display: inline-block;
+
+  @include phones {
+    z-index: auto;
+  }
+  
+
+}
+
+.chocco__accordeon-item-btn {
+  position: relative;
+  border: none;
+  min-width: 6.25rem;
+  min-height: 40.625rem;
+  height: 100vh;
+}
+
+.chocco__accordeon-item-btn--milk {
+  background: url(../../img/item/milk.png)no-repeat;
+  background-size:cover;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #333537;
+    min-width: 6.25rem;
+    min-height: 40.625rem;
+    height: 100%;
+    opacity: 0.4;
+    top: 0rem;
+    left: 0rem;
+    
+  }
+}
+
+
+.chocco__accordeon-item-btn--honey {
+  background: url(../../img/item/honey.png) no-repeat;
+  background-size:cover;
+ 
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #333537;
+    min-width: 6.25rem;
+    min-height: 40.625rem;
+    height: 100%;
+    opacity: 0.4;
+    top: 0rem;
+    left: 0rem;
+  }
+}
+
+.chocco__accordeon-item-btn--berries {
+  background: url(../../img/item/berries.png) no-repeat;
+  background-size:cover;
+  
+  
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #333537;
+    min-width: 6.25rem;
+    min-height: 40.625rem;
+    height: 100%;
+    opacity: 0.4;
+    top: 0rem;
+    left: 0rem;
+    
+  }
+
+}
+
+
+.chocco__accordeon-item-title {
+  position: relative;
+  z-index:10 ;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 3rem;
+  font-weight: 700;
+
+  @include tablets {
+  width: 5rem;
+  }
+}
+
+
+.chocco__accordeon-item.active {
+  .chocco__accordeon-item-content {
+    width: 33.125rem;
+    height: 100%;
+
+  }   
+}
+
+
+.chocco__accordeon-item.active {
+  @include phones {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  width: 100vw;
+}
+
+@include tablets {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  width: 100vw;
+}
+}
+
+
+
+
+.close-btn {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  top: 1%;
+  right: 3%;
+
+  @include tablets {
+    display: initial;
+  
+  }
+
+  &:hover {
+    .close-btn__icon {
+      fill: white;
+    }
+  }
+}
+
+.close-btn__icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  fill: #c2c3c4;
+  transition: fill .2s;
+}
+
+.chocco__accordeon-item-content {
+  max-width: 33.125rem;
+  font-size: 1rem;
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  background-color: rgba(51, 53, 55, .9);
+  transition: .7s;
+  
+
+  @include phones {
+    flex: 1;
+  }
+}
+
+ .chocco__accordeon-item-text {
+  height: 100%;
+  max-width: 77%;
+  padding-top: 3.125rem;
+  padding-left: 1.875rem;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height:1.4375rem;
+  color: #ffffff;
+
+  @include phones {
+    width: 100%;
+  }
+}

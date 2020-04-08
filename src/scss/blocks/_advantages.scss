@@ -1,0 +1,164 @@
+.advantages { 
+  position: relative;
+  background-image: url(./../img/background2.png);
+  background-repeat: no-repeat;
+  background-position-y: center;
+
+  @include tablets {
+    background-position-y: top;
+    display: flex;
+    flex-direction:column;
+    justify-content: center; 
+  }
+   @include phones {
+   background-image: none;
+
+    }
+    
+  
+  
+}
+
+.advantages__container {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction:column;
+  align-content: center; 
+} 
+
+.advantages__list {
+  display: flex;
+  justify-content:space-between;
+  list-style: none;
+
+@include tablets {
+  padding: 0;
+  }
+
+
+  @include phones {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.advantages__description {
+  width: 26.1875rem;
+  margin: 0 auto;
+  padding-bottom: 3.5625rem;
+  text-align: center;
+  color: #666666;
+  font-size: 1.125rem;
+  font-weight: 400;
+
+  @include phones {
+    width:auto ;
+    padding-bottom:0 ;
+    
+  }
+}
+
+
+
+.advantages__item {
+  width: 17.625rem;
+
+  @include phones {
+    width: auto;
+    display: flex;
+    padding-bottom: 10%;
+  }
+
+  &::after {
+  content:"";
+  position:absolute;
+  background:url(./../icons/circles.svg) no-repeat;
+  width: 4.1875rem;
+  height: 1.3125rem;
+  top: 57%;
+  transform: translate(16.8125rem, 0.625rem);
+
+  @include tablets {
+    content: none;
+  }
+
+  @media  (max-width: 950px) {
+    content:none;
+    
+  }
+
+}
+
+
+  &:last-child::after {
+    background: none;
+  }
+}
+
+.advantages__item-title {
+  margin-top: 2.1875rem;
+  font-size: 1.6875rem;
+  font-weight: 700;
+  text-align: center;
+
+
+  @include phones {
+  text-align: left;
+  margin-top: 5%;
+}
+
+}
+
+
+
+
+
+.advantages__item-text {
+  color: #666666;
+  font-family: "Alegreya Sans";
+  font-size: 1.125rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 1.875rem;
+
+  @include phones {
+    text-align: left;
+    margin-top: 2%;
+  }
+}
+
+
+
+.advantages__icon-frame {
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 7.8125rem;
+  height: 7.8125rem;
+  background-color: #f3f5f3;
+  border-radius: 50%;
+  margin-left: 5rem;
+
+  @include tablets {
+    margin-left: 28%;
+  }
+
+  @include phones {
+    margin-bottom: 0;
+    margin-right: 0.8125rem;
+    flex-shrink: 0;
+    margin-left: 0;
+  }
+}
+
+
+
+.advantages__icon-img {
+  position: absolute;
+  width: 4.125rem;
+  height: 4.3125rem;
+  fill:#2e2e2d;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,66 @@
+.container--hero {
+  height: 100%;
+
+  @media (max-width:480px) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+}
+
+
+
+
+.hero {
+  background-color: #86c3d7;
+  position: relative;
+  background-image: url(./../img/view.png);
+  background-repeat: no-repeat;
+  background-position: right;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 40.625rem;
+    height: 7rem;
+    background: url(./../img/leaf-three.png) no-repeat;
+    left: 3%;
+    top: 92%;
+  }
+
+  &::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 21.3125rem;
+  background: url(./../img/4-layers.png) no-repeat;
+  left: 56%;
+  bottom:-2.8125rem;
+  }
+
+  @include tablets {
+    &:after {
+      content:none;
+    }
+    &::before {
+      content: none;
+    }
+  }
+}
+
+  
+
+
+
+.hero__content {
+  display: flex;
+  height: 100%;
+
+  @include tablets {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+
