@@ -1706,14 +1706,14 @@ button {
     .arrow--left {
       left: 9.375rem;
       top: 24%; } }
-  @media screen and (max-width: 480px) {
+  @media (max-width: 480px) {
     .arrow--left {
       left: 8%;
       top: 21%; } }
   @media (max-width: 320px) {
     .arrow--left {
-      left: 10px;
-      top: 18%; } }
+      top: 16%;
+      left: 15%; } }
 
 .arrow--left .arrow__img {
   transform: rotate(180deg); }
@@ -1722,7 +1722,7 @@ button {
   right: -1.5625rem; }
   @media (max-width: 480px) {
     .arrow--right {
-      right: 4.375rem;
+      right: 8%;
       top: 21%; } }
   @media screen and (max-width: 768px) {
     .arrow--right {
@@ -1730,8 +1730,8 @@ button {
       top: 24%; } }
   @media (max-width: 320px) {
     .arrow--right {
-      right: 3.375rem;
-      top: 18%; } }
+      top: 16%;
+      right: 15%; } }
 
 .arrow__img {
   width: 0.8125rem;
@@ -1743,7 +1743,7 @@ button {
   justify-content: center;
   padding-bottom: 3.75rem; }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .bar {
     flex-direction: column;
     align-items: center; } }
@@ -1757,6 +1757,9 @@ button {
   @media (max-width: 320px) {
     .bar__pic {
       margin-right: 0; } }
+  @media (max-width: 1000px) {
+    .bar__pic {
+      width: 50%; } }
 
 @media screen and (max-width: 768px) {
   .bar__pic {
@@ -1768,10 +1771,12 @@ button {
   @media (max-width: 950px) {
     .bar__pic-img {
       width: 95%; } }
+  @media (max-width: 1000px) {
+    .bar__pic-img {
+      width: 80%; } }
   @media (max-width: 320px) {
     .bar__pic-img {
-      width: 60%;
-      margin-right: 16%; } }
+      width: 60%; } }
 
 .bar__content {
   flex: 1;
@@ -1779,6 +1784,9 @@ button {
   height: 28.4375rem;
   display: flex;
   flex-direction: column; }
+  @media (max-width: 1000px) {
+    .bar__content {
+      align-items: center; } }
 
 @media (max-width: 768px) {
   .bar__content {
@@ -1790,6 +1798,9 @@ button {
   margin-bottom: 1.875rem;
   cursor: pointer;
   position: relative; }
+  @media (max-width: 1000px) {
+    .bar__composition {
+      display: none; } }
 
 .bar__composition:hover .bar__composition-block {
   display: block;
@@ -1881,6 +1892,11 @@ button {
       padding-left: 0;
       padding-right: 0;
       text-align: center; } }
+  @media (max-width: 1000px) {
+    .bar__desc {
+      text-align: center;
+      margin-left: 15%;
+      margin-right: 15%; } }
 
 @media screen and (max-width: 768px) {
   .bar__desc {
@@ -1985,22 +2001,18 @@ button {
 
 .bar__item.bar {
   width: 60rem; }
+  @media (max-width: 1000px) {
+    .bar__item.bar {
+      width: 60rem; } }
   @media (max-width: 768px) {
     .bar__item.bar {
       width: 44rem; } }
-  @media (max-width: 480px) {
+  @media screen and (max-width: 480px) {
     .bar__item.bar {
       width: 33rem; } }
   @media (max-width: 320px) {
     .bar__item.bar {
       width: 25rem; } }
-
-.bars__wrapper-arrow {
-  flex: 1;
-  align-self: stretch;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
 
 .work {
   display: flex;
