@@ -6,15 +6,12 @@
 .arrow--left {
   left: -1.5625rem;
 
-  @include tablets {
-    left:9.375rem;
+  @media (max-width:768px){
+    left:15%;
     top:24%;
   }
 
-@media (max-width:480px){
-  left: 8%;
-  top: 21%;
- }
+
  @media (max-width:320px) {
  top: 16%;
  left: 15%; 
@@ -28,14 +25,11 @@
 .arrow--right {
   right: -1.5625rem;
 
-  @media (max-width:480px) {
-    right: 8%;
-    top: 21%;
-  }
+  
 
-  @include tablets {
-    right:9.375rem;
-    top:24%;
+  @media (max-width:768px){
+    right: 15%;
+    top: 24%;
   }
   
   @media (max-width:320px) {
@@ -74,6 +68,14 @@
     margin-right: 0;
   }
 
+  @media (max-width:480px) {
+  margin-left: 5%;
+  }
+
+  @media(max-width: 768px) {
+    margin-left: 7%;
+  }
+
   @media (max-width:1000px) {
     width: 50%;
   }
@@ -95,10 +97,11 @@
   @media (max-width:950px) {
     width: 95%;
   }
-  @media (max-width:1000px) {
-    width: 80%;
-    
+  
+  @media (max-width:768px) {
+    width: 100%;
   }
+  
   @media (max-width:320px) {
     width: 60%;
     
@@ -239,9 +242,10 @@
   margin-bottom: 0.9375rem;
 }
 
-@media screen and (max-width: 768px) {
+@media  (max-width: 768px) {
   .bar__title {
     text-align: center;
+    padding-left: 10%;
   }
 }
 
@@ -254,12 +258,7 @@
   padding-right: 0;
   text-align: center;
   }
-  @media (max-width:1000px) {
-    text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-
-  }
+  
 }
 
 @media screen and (max-width: 768px) {
